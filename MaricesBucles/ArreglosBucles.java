@@ -1,4 +1,8 @@
 import java.io.Console;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ArreglosBucles {
     /* bucles JavaScript
@@ -16,7 +20,7 @@ public class ArreglosBucles {
     public static void main(String[] args) {
         Console console = System.console();
         System.out.println("*****Bienvenido/a*****");
-        int repeticiones = Integer.parseInt(console.readLine("Ingrese cuantas comisiones va a calcular: "));
+        //int repeticiones = Integer.parseInt(console.readLine("Ingrese cuantas comisiones va a calcular: "));
         //********Opcion con contador******** */
         /* int contador = 0;
         while(contador!=repeticiones){
@@ -52,7 +56,7 @@ public class ArreglosBucles {
             System.out.println(repeticiones);
         } */
         //********Opcion con for******** */
-        for(int i = 0; i < repeticiones ; i++){
+        /* for(int i = 0; i < repeticiones ; i++){
             int venta = Integer.parseInt(console.readLine("Ingrese su cifra de ventas: "));
             if (venta > 10000) {
                 System.out.println("Su comisión es de: " + (venta * 0.3) + ", correspondiente al 30%");
@@ -63,8 +67,53 @@ public class ArreglosBucles {
             } else {
                 System.out.println("A usted no le corresponde comisión");
             }
-        }
+            
+
+        } */
+        ArrayList <Integer> miArray = new ArrayList <Integer>(Arrays.asList(1, 2, 3, 4));
+        miArray.add(5);
+        ArrayList <String> miArrayString = new ArrayList <String>(Arrays.asList("a", "b", "c"));
+        System.out.println(miArray);
+
         
+
+        int [] miArreglo = new int[3];
+        miArreglo[0]=7;
+        miArreglo[1]=8;
+        miArreglo[2]=8;
+
+        String [] miArregloListo = {"uwu","owo"};
+        String [] miArregloString = new String[3];
+        miArregloString[0]="hola";
+        miArregloString[1]="hi";
+        miArregloString[2]="ohayo";
+
+        System.out.println(miArreglo);
+        System.out.println(miArreglo.toString());
+
+        //forEach
+        for(int i: miArreglo){
+            System.out.println(i);
+        }
+        for(String i : miArregloListo){
+            System.out.println(i);
+        }
+
+        //Formas de rocorrer hashMap
+        Map<String, ArrayList> miHashMap = new HashMap <String, ArrayList>();
+        miHashMap.put("Tenis", miArrayString);
+        miHashMap.put("Futbol", miArray);
+        System.out.println(miHashMap);
+        //version 1
+        for (String i : miHashMap.keySet()){
+            System.out.println("key: " + i + ", value: "+miHashMap.get(i));
+            miHashMap.get("Tenis");
+
+        }
+        //Version Fredy <3
+        miHashMap.forEach((k,v)-> System.out.println("key: " + k + " Value: " + v));
+
+
         
     }
 }
