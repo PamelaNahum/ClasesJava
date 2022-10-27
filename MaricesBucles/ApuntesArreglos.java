@@ -1,5 +1,5 @@
 public class ApuntesArreglos {
-    /*arreglos o arrays, hashMap
+    /*arreglos o arrays, hashMap-> colecciones
      * son viarable (u objetos) que nos permiten ir guardando datos.
      * tipos que existen en Java
      * arreglos
@@ -16,11 +16,11 @@ public class ApuntesArreglos {
      * 
      * HashMap
      * Definición: Map<String, Integer> miHashMap = new HashMap <String, Integer>();
-     * Método de insercion-> miHashMap.put("llave":2)
+     * Método de insercion-> miHashMap.put("llave",2);
      * 
-     * miHashMap.put("Benja":26);
-     * miHashMap.put("Pame":25);
-     * miHashMap.put("Hector":29);
+     * miHashMap.put("Benja",26);
+     * miHashMap.put("Pame",25);
+     * miHashMap.put("Hector",29);
      * 
      * [{"Benja":26}, {"Pame":25},{"Hector":29}]
      * 

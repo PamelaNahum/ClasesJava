@@ -23,7 +23,8 @@ public class OperLogicos {
 
         if(numero>numeroInt2){
             System.out.println("el primer número es mayor");
-        }else{
+        }
+        else{
             System.out.println("el segundo número es mayor");
         }
     }

@@ -70,7 +70,7 @@ public class ArreglosBucles {
             
 
         } */
-        ArrayList <Integer> miArray = new ArrayList <Integer>(Arrays.asList(1, 2, 3, 4));
+        ArrayList <Integer> miArray = new ArrayList <Integer>();
         miArray.add(5);
         ArrayList <String> miArrayString = new ArrayList <String>(Arrays.asList("a", "b", "c"));
         System.out.println(miArray);
@@ -107,7 +107,7 @@ public class ArreglosBucles {
         //version 1
         for (String i : miHashMap.keySet()){
             System.out.println("key: " + i + ", value: "+miHashMap.get(i));
-            miHashMap.get("Tenis");
+            //miHashMap.get("Tenis"); -> nos permite ingresar al valor correspondiente a la llave ingresada ("Tenis")
 
         }
         //Version Fredy <3
