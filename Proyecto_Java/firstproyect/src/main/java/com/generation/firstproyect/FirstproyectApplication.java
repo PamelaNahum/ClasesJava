@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.generation.firstproyect.models.Conejo;
+import com.generation.firstproyect.models.Gato;
+import com.generation.firstproyect.models.MiniConejo;
 import com.generation.firstproyect.models.Perro;
 
 import ch.qos.logback.core.joran.conditional.ElseAction;
@@ -33,7 +36,7 @@ public class FirstproyectApplication {
 		System.out.println(perroQuiltro.toString());
 		perroQuiltro.setVacunado(false); */
 
-		ArrayList <Perro> perros = new ArrayList<Perro>();
+		/* ArrayList <Perro> perros = new ArrayList<Perro>();
 		Console console = System.console();
 		int cantidad = Integer.parseInt(console.readLine("Ingrese cuantos perros quiere crear: "));
 		for (int i = 0; i < cantidad; i++){
@@ -54,7 +57,21 @@ public class FirstproyectApplication {
 			}
 			perros.add(perro);
 		}
-		System.out.println(perros);
+		System.out.println(perros); */
+
+		Gato gato = new Gato();
+		System.out.println(gato);
+		Gato gatoCompleto = new Gato(3,"Juan","Siames","Peludito", true);
+		System.out.println(gatoCompleto);
+
+		Conejo conejo = new Conejo();
+		conejo.saltarAlto();
+
+		conejo.comer();
+		gato.comer();
+
+		MiniConejo miniConejo = new MiniConejo("mini", "orejas caidas", "suave", true, 3.2f, "chiquito");
+		System.out.println(miniConejo);
 
 	}
 
