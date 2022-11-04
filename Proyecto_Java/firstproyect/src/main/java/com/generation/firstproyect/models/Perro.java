@@ -66,11 +66,18 @@ public class Perro {
     }
 
     public Boolean adopcion(){
-        if(this.vacunado){
-            return true;
-        }else{
+        //haz todo lo que yo te digo aquí dentro
+        try {
+            if(this.vacunado){
+                return true;
+            }else{
+                return false;
+            }
+            
+        } catch (Exception e) {// si se cae algo en el try, haz esto
             return false;
         }
+        
     }
 
     @Override

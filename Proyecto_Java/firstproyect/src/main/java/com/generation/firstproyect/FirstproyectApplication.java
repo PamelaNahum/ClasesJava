@@ -59,7 +59,7 @@ public class FirstproyectApplication {
 		}
 		System.out.println(perros); */
 
-		Gato gato = new Gato();
+		/* Gato gato = new Gato();
 		System.out.println(gato);
 		Gato gatoCompleto = new Gato(3,"Juan","Siames","Peludito", true);
 		System.out.println(gatoCompleto);
@@ -71,7 +71,10 @@ public class FirstproyectApplication {
 		gato.comer();
 
 		MiniConejo miniConejo = new MiniConejo("mini", "orejas caidas", "suave", true, 3.2f, "chiquito");
-		System.out.println(miniConejo);
+		System.out.println(miniConejo); */
+
+		Perro perro = new Perro();
+		System.out.println(perro.adopcion());
 
 	}
 
